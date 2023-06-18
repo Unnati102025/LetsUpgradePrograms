@@ -9,7 +9,6 @@ public class majorityElement {
             counts.put(num, counts.getOrDefault(num, 0) + 1);
         }
 
-        // Finding the majority element
         int majorityThreshold = nums.length / 2;
         for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {
             if (entry.getValue() > majorityThreshold) {
